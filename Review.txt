@@ -1,0 +1,13 @@
+----------------------------MODEL-SQL-SERVER-BY-DANIEL-ELISHAKOV--------------------------
+|				                                                         |
+|                                    version 2.0 beta                                    |
+|                                                                                        |
+-----------------------------------all rights reserved------------------------------------
+	
+Thanks for my reviewer Pavel, who has found some mistakes, while testing my program. He found some leaks in WHERE-clause and UPDATE request. They are now fixed, but sometimes program may still crash on some of the requests. That happens because of the socket delay and if you'll try to launch the program and make the same request again, it will successfully work. Also Pavel admitted, that my grammar for where clause can create some strings inappropriate for model SQL language and I had to double-check the WHERE-clause grammar and code to add some flags to control the types of expressions in request.
+
+----------------------------MODEL-SQL-SERVER-BY-DANIEL-ELISHAKOV--------------------------
+|				                                                         |
+|                                    version 2.0 beta                                    |
+|                                                                                        |
+-----------------------------------all rights reserved------------------------------------
